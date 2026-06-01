@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7410 3900" role="img" aria-label="United States flag">
+  <rect width="7410" height="3900" fill="#b22234"/>
+  <path d="M0 300h7410v300H0zm0 600h7410v300H0zm0 600h7410v300H0zm0 600h7410v300H0zm0 600h7410v300H0zm0 600h7410v300H0z" fill="#fff"/>
+  <rect width="2964" height="2100" fill="#3c3b6e"/>
+  <g fill="#fff">
+    <g id="s18">
+      <g id="s9">
+        <g id="s5">
+          <g id="s4">
+            <path id="star" d="M247 90l70 215-183-133h226L177 305z"/>
+            <use href="#star" x="494"/>
+            <use href="#star" x="988"/>
+            <use href="#star" x="1482"/>
+          </g>
+          <use href="#star" x="1976"/>
+        </g>
+        <use href="#s4" y="420"/>
+      </g>
+      <use href="#s9" y="840"/>
+    </g>
+    <use href="#s18" y="1260"/>
+    <g id="s12" transform="translate(247,210)">
+      <g id="s6">
+        <use href="#star"/>
+        <use href="#star" x="494"/>
+        <use href="#star" x="988"/>
+        <use href="#star" x="1482"/>
+        <use href="#star" x="1976"/>
+        <use href="#star" x="2470"/>
+      </g>
+      <use href="#s6" y="420"/>
+      <use href="#s6" y="840"/>
+      <use href="#s6" y="1260"/>
+    </g>
+  </g>
+</svg>
