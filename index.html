@@ -3,492 +3,241 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>SalibaSoft | Jihad Saliba - Developer, Financial Modeler & QBO ProAdvisor</title>
-  <meta name="description" content="SalibaSoft by Jihad Saliba: professional software development, automation, financial modeling, accounting systems, and QuickBooks Online ProAdvisor services in English, French, and Arabic." />
-  <meta name="theme-color" content="#070733" />
-  <meta property="og:title" content="SalibaSoft | Jihad Saliba" />
-  <meta property="og:description" content="Software development, business automation, financial modeling, accounting systems, and QBO ProAdvisor services." />
+  <title>USSOFTWARE | Smart Software. Real Results.</title>
+  <meta name="description" content="USSOFTWARE by Jihad Saliba: custom software development, automation, financial modeling, accounting systems, dashboards, and QuickBooks Online ProAdvisor services." />
+  <meta name="theme-color" content="#061a40" />
+  <meta property="og:title" content="USSOFTWARE | Smart Software. Real Results." />
+  <meta property="og:description" content="Custom software, automation, financial modeling, accounting systems, dashboards, and QBO ProAdvisor services." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/salibasoft-logo.png" />
-  <link rel="icon" href="assets/favicon.png" />
-  <link rel="preload" as="image" href="assets/jihad-saliba.jpg" fetchpriority="high">
-  <link rel="preload" as="image" href="assets/salibasoft-logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;750;850&family=Noto+Naskh+Arabic:wght@500;700&display=swap" rel="stylesheet">
-
+  <meta property="og:image" content="assets/ussoftware-logo.svg" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="assets/ussoftware-logo.svg" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/us-flag.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;750;850&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --blue: #09066f;
-      --blue-2: #1211a0;
-      --ink: #07111f;
-      --text: #eef6ff;
-      --muted: #bac8df;
+      --bg: #f7fbff;
+      --ink: #071326;
+      --text: #5b6679;
+      --muted: #7b8798;
+      --line: #e3eaf3;
       --white: #ffffff;
-      --panel: rgba(255,255,255,.09);
-      --panel-2: rgba(255,255,255,.14);
-      --line: rgba(255,255,255,.18);
-      --cyan: #62ddff;
-      --mint: #82ffc7;
-      --gold: #ffd166;
-      --shadow: 0 30px 90px rgba(0,0,0,.38);
-      --radius: 30px;
+      --blue: #075be8;
+      --blue-2: #063a9c;
+      --cyan: #05bde9;
+      --red: #d71920;
+      --green: #22c55e;
+      --gold: #f59e0b;
+      --shadow: 0 26px 80px rgba(12, 37, 77, .11);
+      --radius: 26px;
       --max: 1180px;
     }
-
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+      color: var(--ink);
       background:
-        radial-gradient(circle at 8% 8%, rgba(98,221,255,.28), transparent 26%),
-        radial-gradient(circle at 92% 10%, rgba(130,255,199,.17), transparent 28%),
-        radial-gradient(circle at 72% 88%, rgba(255,209,102,.16), transparent 30%),
-        linear-gradient(145deg, #05042f 0%, #0b0a6e 42%, #06111f 100%);
-      color: var(--text);
+        radial-gradient(circle at 78% 12%, rgba(5, 189, 233, .18), transparent 28%),
+        radial-gradient(circle at 14% 16%, rgba(7, 91, 232, .10), transparent 24%),
+        linear-gradient(180deg, #ffffff 0%, var(--bg) 48%, #ffffff 100%);
       overflow-x: hidden;
     }
-
     a { color: inherit; text-decoration: none; }
-    p { margin: 0; color: var(--muted); line-height: 1.75; }
-    h1, h2, h3 { margin: 0; letter-spacing: -.045em; }
-    h1 { font-size: clamp(3.15rem, 8.3vw, 7rem); line-height: .91; }
-    h2 { font-size: clamp(2rem, 5vw, 4.35rem); line-height: .98; }
-    h3 { font-size: 1.22rem; }
-
+    p { margin: 0; color: var(--text); line-height: 1.75; }
+    h1, h2, h3 { margin: 0; letter-spacing: -.04em; color: var(--ink); }
+    h1 { font-size: clamp(2.7rem, 7vw, 6.4rem); line-height: .94; }
+    h2 { font-size: clamp(2rem, 4.8vw, 4rem); line-height: 1; }
+    h3 { font-size: 1.12rem; }
     .shell { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
-    .glass {
-      border: 1px solid var(--line);
-      background: linear-gradient(160deg, rgba(255,255,255,.14), rgba(255,255,255,.055));
-      backdrop-filter: blur(18px);
-      box-shadow: var(--shadow);
-    }
-
     .topbar {
       position: sticky;
-      top: 16px;
+      top: 14px;
       z-index: 50;
       width: min(var(--max), calc(100% - 28px));
-      margin: 16px auto 0;
-      border-radius: 999px;
+      margin: 14px auto 0;
       padding: 10px 12px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .brand { display: flex; align-items: center; gap: 13px; }
-    .brand-logo {
-      width: 46px; height: 46px;
-      border-radius: 15px;
-      object-fit: cover;
-      background: var(--blue);
-      border: 1px solid rgba(255,255,255,.22);
-      box-shadow: 0 12px 28px rgba(0,0,0,.22);
-    }
-    .brand strong { display: block; color: var(--white); font-size: 1.02rem; letter-spacing: -.02em; }
-    .brand span { display: block; font-size: .82rem; color: var(--muted); margin-top: 2px; }
-
-    nav { display: flex; align-items: center; gap: 4px; }
-    nav a {
-      font-size: .92rem;
-      color: var(--muted);
-      padding: 10px 13px;
       border-radius: 999px;
-      transition: .25s ease;
-    }
-    nav a:hover { color: var(--text); background: rgba(255,255,255,.1); }
-    .menu-btn { display: none; border: 0; background: transparent; color: var(--text); font-size: 1.8rem; }
-
-    .hero { position: relative; padding: 106px 0 72px; }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.03fr .97fr;
-      gap: 34px;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
+      background: rgba(255,255,255,.86);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(210, 222, 238, .9);
+      box-shadow: 0 18px 50px rgba(12, 37, 77, .10);
     }
-
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand img.logo { width: 48px; height: 48px; border-radius: 15px; object-fit: cover; box-shadow: 0 10px 25px rgba(7, 91, 232, .16); }
+    .brand strong { display: block; font-weight: 850; letter-spacing: .03em; font-size: 1.03rem; }
+    .brand span { display: block; color: var(--muted); font-size: .82rem; margin-top: 2px; }
+    nav { display: flex; align-items: center; gap: 4px; }
+    nav a { padding: 10px 13px; border-radius: 999px; color: #425069; font-size: .93rem; transition: .22s ease; }
+    nav a:hover { background: #edf5ff; color: var(--blue); }
+    .flag-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 11px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--line);
+      color: #425069;
+      font-size: .86rem;
+      font-weight: 650;
+      box-shadow: 0 10px 26px rgba(12, 37, 77, .06);
+    }
+    .flag-pill img { width: 28px; height: 18px; border-radius: 3px; box-shadow: 0 0 0 1px rgba(0,0,0,.08); }
+    .menu-btn { display: none; border: 0; background: transparent; font-size: 1.75rem; color: var(--ink); }
+    .hero { padding: 104px 0 70px; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 46px; align-items: center; }
     .eyebrow {
       display: inline-flex;
-      align-items: center;
       gap: 10px;
+      align-items: center;
       padding: 9px 13px;
       border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,.08);
-      color: var(--mint);
-      margin-bottom: 24px;
+      color: var(--blue);
+      background: #edf5ff;
+      border: 1px solid #d9e9ff;
+      font-weight: 650;
       font-size: .92rem;
+      margin-bottom: 24px;
     }
-    .dot {
-      width: 9px; height: 9px;
-      border-radius: 50%;
-      background: var(--mint);
-      box-shadow: 0 0 22px var(--mint);
-    }
-    .hero h1 span {
-      color: transparent;
-      background: linear-gradient(90deg, #fff, var(--cyan), var(--mint));
-      -webkit-background-clip: text;
-      background-clip: text;
-    }
-    .hero-copy { margin-top: 28px; max-width: 760px; font-size: 1.12rem; }
-    .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 20px var(--cyan); }
+    .hero h1 span { color: transparent; background: linear-gradient(90deg, var(--blue), var(--cyan)); -webkit-background-clip: text; background-clip: text; }
+    .hero-copy { max-width: 760px; margin-top: 26px; font-size: 1.12rem; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 14px 18px;
-      border-radius: 999px;
-      font-weight: 750;
-      border: 1px solid transparent;
-      transition: transform .25s ease, background .25s ease, border .25s ease;
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 14px 19px; border-radius: 999px; font-weight: 750; border: 1px solid transparent;
+      transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
     }
     .btn:hover { transform: translateY(-2px); }
-    .btn.primary { color: #03051e; background: linear-gradient(135deg, var(--cyan), var(--mint)); }
-    .btn.secondary { background: rgba(255,255,255,.09); border-color: var(--line); color: var(--text); }
-
-    .hero-card {
-      border-radius: var(--radius);
-      padding: 20px;
-      position: relative;
-      overflow: hidden;
+    .btn.primary { color: #ffffff; background: linear-gradient(135deg, var(--blue), var(--cyan)); box-shadow: 0 18px 42px rgba(7, 91, 232, .22); }
+    .btn.secondary { color: var(--ink); background: #ffffff; border-color: var(--line); }
+    .btn.whatsapp { color: #052414; background: #25d366; }
+    .hero-visual {
+      position: relative; min-height: 520px; display: grid; place-items: center; border-radius: 36px;
+      background:
+        radial-gradient(circle at center, #ffffff 0%, #ffffff 28%, rgba(237,245,255,.92) 29%, rgba(237,245,255,.50) 50%, transparent 72%),
+        linear-gradient(135deg, rgba(255,255,255,.88), rgba(237,245,255,.76));
+      border: 1px solid var(--line); box-shadow: var(--shadow); overflow: hidden;
     }
-    .hero-card::before {
-      content: "";
+    .hero-visual::before, .hero-visual::after {
+      content: ""; position: absolute; width: 180px; height: 180px;
+      background-image: radial-gradient(circle, rgba(7, 91, 232, .18) 2px, transparent 2px);
+      background-size: 18px 18px;
+    }
+    .hero-visual::before { top: 48px; left: 54px; }
+    .hero-visual::after { right: 52px; bottom: 46px; }
+    .us-ribbon {
       position: absolute;
-      inset: -120px -140px auto auto;
-      width: 360px; height: 360px;
-      border-radius: 50%;
-      background: rgba(98,221,255,.22);
-      filter: blur(12px);
-    }
-    .photo-wrap {
-      position: relative;
-      border-radius: 26px;
-      overflow: hidden;
-      min-height: 570px;
-      background: linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.04));
-      border: 1px solid var(--line);
-    }
-    .photo-wrap img.profile {
-      width: 100%;
-      height: 570px;
-      object-fit: cover;
-      display: block;
-      filter: saturate(1.04) contrast(1.02);
-    }
-    .photo-overlay {
-      position: absolute;
-      inset: auto 18px 18px 18px;
-      border-radius: 24px;
-      padding: 18px;
-      background: rgba(3,6,24,.72);
-      border: 1px solid rgba(255,255,255,.16);
-      backdrop-filter: blur(16px);
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 14px;
+      left: 24px;
+      top: 24px;
+      display: inline-flex;
       align-items: center;
-    }
-    .overlay-logo {
-      width: 64px; height: 64px;
-      border-radius: 18px;
-      object-fit: cover;
-      background: var(--blue);
-      border: 1px solid rgba(255,255,255,.22);
-    }
-    .photo-overlay h3 { font-size: 1.45rem; }
-    .photo-overlay p { font-size: .95rem; }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-      margin-top: 22px;
-    }
-    .stat {
-      padding: 18px;
-      border-radius: 20px;
-      background: rgba(255,255,255,.075);
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.88);
       border: 1px solid var(--line);
+      box-shadow: 0 14px 34px rgba(12, 37, 77, .09);
+      color: #334158;
+      font-weight: 750;
+      z-index: 2;
     }
-    .stat strong { display: block; font-size: 1.75rem; letter-spacing: -.06em; color: var(--white); margin-bottom: 6px; }
-    .stat span { color: var(--muted); font-size: .9rem; }
-
-    section { padding: 86px 0; }
-    .section-head { display: flex; justify-content: space-between; gap: 22px; align-items: end; margin-bottom: 34px; }
-    .section-head p { max-width: 540px; }
-
+    .us-ribbon img { width: 34px; height: 22px; border-radius: 4px; box-shadow: 0 0 0 1px rgba(0,0,0,.08); }
+    .logo-panel { position: relative; z-index: 1; width: min(420px, 76%); text-align: center; }
+    .logo-panel img { width: 100%; height: auto; display: block; filter: drop-shadow(0 28px 50px rgba(7, 91, 232, .16)); }
+    .proof-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 24px; }
+    .proof { padding: 18px; border-radius: 20px; background: rgba(255,255,255,.84); border: 1px solid var(--line); box-shadow: 0 14px 38px rgba(12, 37, 77, .07); }
+    .proof strong { display: block; font-size: 1.65rem; letter-spacing: -.06em; }
+    .proof span { color: var(--muted); font-size: .88rem; }
+    section { padding: 82px 0; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 22px; margin-bottom: 34px; }
+    .section-head p { max-width: 560px; }
     .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
     .card {
-      border-radius: 24px;
-      padding: 24px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,.07);
-      min-height: 246px;
-      transition: transform .25s ease, background .25s ease;
+      min-height: 244px; padding: 25px; border-radius: var(--radius); background: var(--white); border: 1px solid var(--line);
+      box-shadow: 0 18px 48px rgba(12, 37, 77, .06); transition: transform .22s ease, box-shadow .22s ease;
     }
-    .card:hover { transform: translateY(-5px); background: rgba(255,255,255,.11); }
-    .icon {
-      width: 48px; height: 48px;
-      border-radius: 16px;
-      display: grid; place-items: center;
-      margin-bottom: 22px;
-      background: rgba(98,221,255,.14);
-      border: 1px solid rgba(98,221,255,.25);
-      font-size: 1.25rem;
-    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 26px 65px rgba(12, 37, 77, .10); }
+    .icon { width: 50px; height: 50px; border-radius: 17px; display: grid; place-items: center; margin-bottom: 22px; color: var(--blue); background: #edf5ff; font-size: 1.25rem; }
     .card h3 { margin-bottom: 12px; }
-
-    .split {
-      display: grid;
-      grid-template-columns: .94fr 1.06fr;
-      gap: 24px;
-      align-items: stretch;
-    }
-    .panel { border-radius: var(--radius); padding: 30px; }
+    .split { display: grid; grid-template-columns: .95fr 1.05fr; gap: 24px; align-items: stretch; }
+    .panel { border-radius: 34px; padding: 30px; background: #ffffff; border: 1px solid var(--line); box-shadow: var(--shadow); }
     .list { display: grid; gap: 14px; margin-top: 26px; }
-    .list-item {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 14px;
-      padding: 16px;
-      border-radius: 18px;
-      background: rgba(255,255,255,.07);
-      border: 1px solid var(--line);
-    }
-    .check {
-      width: 28px; height: 28px;
-      border-radius: 50%;
-      display: grid; place-items: center;
-      color: #03051e;
-      background: var(--mint);
-      font-size: .9rem;
-      font-weight: 850;
-      margin-top: 2px;
-    }
-    .list-item p { font-size: .95rem; }
-
+    .list-item { display: grid; grid-template-columns: auto 1fr; gap: 14px; padding: 16px; border-radius: 18px; background: #f7fbff; border: 1px solid var(--line); }
+    .check { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; color: white; background: var(--blue); font-weight: 850; margin-top: 2px; }
     .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 26px; }
-    .feature-tile {
-      padding: 22px;
-      border-radius: 22px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,.065);
-    }
+    .feature-tile { padding: 22px; border-radius: 22px; border: 1px solid var(--line); background: #f7fbff; }
     .feature-tile h3 { margin-bottom: 10px; }
-
     .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-    .step {
-      position: relative;
-      padding: 24px;
-      border-radius: 24px;
-      background: rgba(255,255,255,.065);
-      border: 1px solid var(--line);
-    }
-    .num { color: var(--cyan); font-weight: 850; margin-bottom: 18px; display: inline-block; }
-
-    .language-panel {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-    .lang {
-      border-radius: 24px;
-      padding: 26px;
-      min-height: 210px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,.07);
-    }
-    .lang .label { color: var(--mint); font-size: .88rem; margin-bottom: 18px; display: block; }
-    .lang.ar { direction: rtl; font-family: 'Noto Naskh Arabic', Inter, sans-serif; }
-    .lang.ar h3 { letter-spacing: 0; font-size: 1.55rem; }
-
+    .step { padding: 24px; border-radius: 24px; background: #ffffff; border: 1px solid var(--line); box-shadow: 0 18px 48px rgba(12, 37, 77, .06); }
+    .num { color: var(--blue); font-weight: 850; margin-bottom: 18px; display: inline-block; }
     .contact-box {
-      border-radius: 34px;
-      padding: clamp(30px, 6vw, 58px);
-      display: grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap: 28px;
-      align-items: center;
-      overflow: hidden;
-      position: relative;
+      border-radius: 36px; padding: clamp(30px, 6vw, 58px); display: grid; grid-template-columns: 1.04fr .96fr; gap: 28px;
+      align-items: center; overflow: hidden; position: relative; color: #ffffff;
+      background:
+        linear-gradient(135deg, rgba(7, 91, 232, .93), rgba(6, 26, 64, .98)),
+        url("assets/us-flag.svg") right center / 52% auto no-repeat;
+      box-shadow: var(--shadow);
     }
-    .contact-box::after {
-      content: "";
-      position: absolute;
-      inset: auto -120px -120px auto;
-      width: 320px; height: 320px;
-      background: rgba(130,255,199,.16);
-      border-radius: 50%;
-      filter: blur(8px);
-    }
-    .contact-card {
-      position: relative;
-      z-index: 1;
-      padding: 22px;
-      border-radius: 24px;
-      background: rgba(3,6,24,.58);
-      border: 1px solid rgba(255,255,255,.12);
-    }
-    .contact-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      padding: 16px 0;
-      border-bottom: 1px solid rgba(255,255,255,.1);
-    }
+    .contact-box h2, .contact-box p { color: #ffffff; }
+    .contact-box p { opacity: .88; }
+    .contact-card { position: relative; z-index: 1; padding: 22px; border-radius: 24px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22); backdrop-filter: blur(10px); }
+    .contact-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.16); }
     .contact-row:last-child { border-bottom: 0; }
-    .contact-row span { color: var(--muted); }
-    .contact-row a { color: var(--text); font-weight: 650; word-break: break-word; }
-
+    .contact-row span { color: rgba(255,255,255,.70); }
+    .contact-row a { color: #ffffff; font-weight: 650; word-break: break-word; }
     footer { padding: 34px 0 50px; color: var(--muted); }
     .footer-inner { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 24px; }
-
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .65s ease, transform .65s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    /* iPhone visibility/performance fixes */
-    body { min-height: 100svh; }
-    .topbar { top: max(16px, env(safe-area-inset-top)); }
-    .photo-wrap img.profile { object-position: center top; }
-
+    .whatsapp-float {
+      position: fixed; right: 18px; bottom: 18px; z-index: 100; width: 58px; height: 58px; border-radius: 50%;
+      background: #25D366; display: grid; place-items: center; box-shadow: 0 18px 45px rgba(0,0,0,.22); border: 1px solid rgba(255,255,255,.6);
+    }
+    .whatsapp-float svg { width: 30px; height: 30px; fill: white; }
     @media (max-width: 960px) {
       .hero-grid, .split, .contact-box { grid-template-columns: 1fr; }
       .cards { grid-template-columns: repeat(2, 1fr); }
-      .timeline, .language-panel { grid-template-columns: 1fr 1fr; }
-      .stats { grid-template-columns: repeat(2, 1fr); }
-      .hero { padding-top: 82px; }
-      .photo-wrap, .photo-wrap img.profile { min-height: 500px; height: 500px; }
+      .timeline { grid-template-columns: repeat(2, 1fr); }
+      .proof-row { grid-template-columns: 1fr; }
+      .hero-visual { min-height: 430px; }
     }
-
-    @media (max-width: 690px) {
+    @media (max-width: 720px) {
       .topbar { top: 10px; border-radius: 24px; align-items: flex-start; }
       .menu-btn { display: block; }
       nav {
-        display: none;
-        position: absolute;
-        left: 12px;
-        right: 12px;
-        top: 68px;
-        padding: 12px;
-        border-radius: 22px;
-        background: rgba(6,6,62,.96);
-        border: 1px solid var(--line);
-        flex-direction: column;
-        align-items: stretch;
+        display: none; position: absolute; left: 12px; right: 12px; top: 70px; padding: 12px; border-radius: 22px;
+        background: rgba(255,255,255,.98); border: 1px solid var(--line); flex-direction: column; align-items: stretch;
       }
       nav.open { display: flex; }
-      nav a { padding: 12px 14px; }
-      .cards, .timeline, .language-panel, .feature-grid, .stats { grid-template-columns: 1fr; }
+      .flag-pill { display: none; }
+      .hero { padding-top: 78px; }
+      .cards, .timeline, .feature-grid { grid-template-columns: 1fr; }
       .section-head { display: block; }
       .section-head p { margin-top: 16px; }
-      section { padding: 66px 0; }
+      section { padding: 64px 0; }
+      .hero-visual { min-height: 360px; }
+      .logo-panel { width: 82%; }
       .contact-row { align-items: flex-start; flex-direction: column; }
-      .hero-card {
-        padding: 12px;
-      }
-
-      .photo-wrap {
-        min-height: 0;
-        height: auto;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .photo-wrap img.profile {
-        width: 100%;
-        min-height: 0;
-        height: auto;
-        aspect-ratio: 4 / 5;
-        object-fit: cover;
-        object-position: center top;
-        border-radius: 22px 22px 0 0;
-      }
-
-      .photo-overlay {
-        position: static;
-        inset: auto;
-        width: 100%;
-        margin: 0;
-        grid-template-columns: auto 1fr;
-        gap: 12px;
-        align-items: center;
-        padding: 14px;
-        border-radius: 0 0 22px 22px;
-        background: rgba(3,6,24,.88);
-        backdrop-filter: blur(10px);
-      }
-
-      .overlay-logo {
-        width: 52px;
-        height: 52px;
-        border-radius: 15px;
-      }
-
-      .photo-overlay h3 {
-        font-size: 1.15rem;
-      }
-
-      .photo-overlay p {
-        font-size: .82rem;
-        line-height: 1.45;
-      }
+      .us-ribbon { left: 14px; top: 14px; font-size: .82rem; }
+      .whatsapp-float { right: 14px; bottom: 14px; width: 54px; height: 54px; }
     }
-    .whatsapp-btn {
-      background: #25D366;
-      color: #06111f;
-      border-color: rgba(255,255,255,.18);
-    }
-    
-    .whatsapp-btn svg {
-      width: 20px;
-      height: 20px;
-    }
-    
-    .whatsapp-float {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      z-index: 100;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      background: #25D366;
-      display: grid;
-      place-items: center;
-      box-shadow: 0 18px 45px rgba(0,0,0,.35);
-      border: 1px solid rgba(255,255,255,.35);
-    }
-    
-    .whatsapp-float svg {
-      width: 30px;
-      height: 30px;
-      fill: white;
-    }
-    
-    @media (max-width: 690px) {
-      .whatsapp-float {
-        right: 14px;
-        bottom: 14px;
-        width: 54px;
-        height: 54px;
-      }
-    } 
   </style>
 </head>
 <body>
-  <header class="topbar glass">
-    <a href="#top" class="brand" aria-label="SalibaSoft home">
-      <img class="brand-logo" src="assets/salibasoft-logo.png" alt="SalibaSoft logo" width="256" height="256">
+  <header class="topbar">
+    <a href="#top" class="brand" aria-label="USSOFTWARE home">
+      <img class="logo" src="assets/favicon.svg" alt="USSOFTWARE logo" width="128" height="128" />
       <div>
-        <strong>SalibaSoft</strong>
-        <span>Jihad Saliba • Developer • Finance • QBO</span>
+        <strong>USSOFTWARE</strong>
+        <span>Smart Software. Real Results.</span>
       </div>
     </a>
     <button class="menu-btn" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
@@ -496,8 +245,8 @@
       <a href="#services">Services</a>
       <a href="#finance">Finance</a>
       <a href="#work">Work</a>
-      <a href="#languages">Languages</a>
       <a href="#contact">Contact</a>
+      <span class="flag-pill"><img src="assets/us-flag.svg" alt="US flag" /> US-inspired</span>
     </nav>
   </header>
 
@@ -505,47 +254,28 @@
     <section class="hero">
       <div class="shell hero-grid">
         <div class="reveal">
-          <div class="eyebrow"><span class="dot"></span> Professional developer and financial systems consultant</div>
-          <h1>Software that works. <span>Finance that makes sense.</span></h1>
-          <p class="hero-copy">I help businesses turn complex operations, accounting workflows, spreadsheets, APIs, and reporting needs into clean, reliable digital systems. My background combines more than 40 years of programming experience, a Master’s degree in Finance, and QuickBooks Online ProAdvisor expertise.</p>
+          <div class="eyebrow"><span class="dot"></span> US-inspired software, finance, and automation services</div>
+          <h1>Smart software for <span>real business results.</span></h1>
+          <p class="hero-copy">USSOFTWARE helps businesses turn complex operations, accounting workflows, spreadsheets, APIs, and reporting needs into clean, reliable digital systems. Led by Jihad Saliba, the work combines more than 40 years of programming experience, a Master’s degree in Finance, and QuickBooks Online ProAdvisor expertise.</p>
           <div class="cta-row">
-            <a class="btn primary" href="mailto:jihadsaliba39@gmail.com?subject=Project%20Inquiry%20from%20SalibaSoft%20Website">Start a project</a>
+            <a class="btn primary" href="mailto:jihadsaliba39@gmail.com?subject=Project%20Inquiry%20from%20USSOFTWARE%20Website">Start a project →</a>
             <a class="btn secondary" href="https://www.freelancer.com/u/saliba04" target="_blank" rel="noopener">View Freelancer profile</a>
-            <a class="btn whatsapp-btn" href="https://wa.me/9613613731?text=Hello%20Jihad,%20I%20visited%20your%20SalibaSoft%20website%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">
-              <svg viewBox="0 0 32 32" aria-hidden="true">
-                <path fill="currentColor" d="M16.01 3.2A12.76 12.76 0 0 0 5.18 22.7L3.6 28.8l6.25-1.52A12.75 12.75 0 1 0 16.01 3.2Zm0 23.18c-2.05 0-4.06-.6-5.78-1.75l-.41-.27-3.7.9.94-3.6-.29-.43a10.35 10.35 0 1 1 9.24 5.15Zm5.74-7.78c-.31-.16-1.86-.92-2.15-1.03-.29-.1-.5-.16-.71.16-.21.31-.81 1.03-1 1.24-.18.21-.37.24-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.56-1.85-1.74-2.16-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54h-.6c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.23 3.4 5.4 4.77.75.32 1.34.52 1.8.66.76.24 1.45.21 2 .13.61-.09 1.86-.76 2.13-1.5.26-.73.26-1.36.18-1.5-.08-.13-.29-.21-.6-.37Z"/>
-              </svg>
-              WhatsApp
-            </a>
+            <a class="btn whatsapp" href="https://wa.me/9613613731?text=Hello%20Jihad,%20I%20visited%20your%20USSOFTWARE%20website%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+
+          <div class="proof-row reveal">
+            <div class="proof"><strong>40+</strong><span>Years programming experience</span></div>
+            <div class="proof"><strong>1998</strong><span>Master’s degree in Finance</span></div>
+            <div class="proof"><strong>QBO</strong><span>QuickBooks Online ProAdvisor</span></div>
           </div>
         </div>
 
-        <aside class="hero-card glass reveal" aria-label="Profile summary">
-          <div class="photo-wrap">
-            <img class="profile"
-             src="assets/jihad-saliba-white-background.jpg"
-             alt="Jihad Saliba"
-             width="1254"
-             height="1254"
-             loading="eager"
-             decoding="async"
-             fetchpriority="high">
-            <div class="photo-overlay">
-              <img class="overlay-logo" src="assets/salibasoft-logo.png" alt="SalibaSoft logo" width="256" height="256">
-              <div>
-                <h3>Jihad Saliba</h3>
-                <p>Founder of SalibaSoft. Developer, financial modeler, accounting automation consultant, and QBO ProAdvisor.</p>
-              </div>
-            </div>
+        <aside class="hero-visual reveal" aria-label="USSOFTWARE logo">
+          <div class="us-ribbon"><img src="assets/us-flag.svg" alt="US flag" /> American-style clarity</div>
+          <div class="logo-panel">
+            <img src="assets/ussoftware-logo.svg" alt="USSOFTWARE Smart Software Real Results logo" width="900" height="300" />
           </div>
         </aside>
-      </div>
-
-      <div class="shell stats reveal">
-        <div class="stat"><strong>40+</strong><span>Years programming experience</span></div>
-        <div class="stat"><strong>1998</strong><span>Master’s degree in Finance</span></div>
-        <div class="stat"><strong>QBO</strong><span>QuickBooks Online ProAdvisor</span></div>
-        <div class="stat"><strong>3</strong><span>English, French, Arabic</span></div>
       </div>
     </section>
 
@@ -553,32 +283,33 @@
       <div class="shell">
         <div class="section-head reveal">
           <h2>Services built for business outcomes.</h2>
-          <p>I focus on useful, maintainable solutions: tools that save time, reduce manual work, improve reporting, and give owners better control over their numbers.</p>
+          <p>Practical, maintainable tools that save time, reduce manual work, improve reporting, and help owners control their numbers.</p>
         </div>
         <div class="cards">
           <article class="card reveal"><div class="icon">⚙️</div><h3>Custom Software</h3><p>Desktop apps, web tools, internal dashboards, APIs, scripts, and workflow systems tailored to the exact business process.</p></article>
           <article class="card reveal"><div class="icon">🔗</div><h3>Automation & Integrations</h3><p>Connect Excel, Google Sheets, CRMs, accounting tools, APIs, webhooks, email, reporting platforms, and third-party services.</p></article>
-          <article class="card reveal"><div class="icon">📊</div><h3>Dashboards & BI</h3><p>Power BI, Excel, database reporting, KPI tracking, operational dashboards, finance dashboards, and clear management summaries.</p></article>
+          <article class="card reveal"><div class="icon">📊</div><h3>Dashboards & BI</h3><p>Power BI, Excel, database reporting, KPI tracking, operational dashboards, finance dashboards, and management summaries.</p></article>
           <article class="card reveal"><div class="icon">🧮</div><h3>Financial Models</h3><p>Investor-ready models, forecasts, cash-flow tools, pricing calculators, business plans, scenario analysis, and decision models.</p></article>
-          <article class="card reveal"><div class="icon">📘</div><h3>Accounting & QBO</h3><p>QuickBooks Online setup, cleanup support, workflow design, automation, reconciliations logic, and reporting structure.</p></article>
-          <article class="card reveal"><div class="icon">🧩</div><h3>Legacy Fixes</h3><p>VBA, Excel macros, old Windows tools, fragile workflows, undocumented systems, and practical modernization without unnecessary complexity.</p></article>
+          <article class="card reveal"><div class="icon">📘</div><h3>Accounting & QBO</h3><p>QuickBooks Online setup, cleanup support, workflow design, automation, reconciliation logic, and reporting structure.</p></article>
+          <article class="card reveal"><div class="icon">🧩</div><h3>Legacy Fixes</h3><p>VBA, Excel macros, old Windows tools, fragile workflows, undocumented systems, and modernization without unnecessary complexity.</p></article>
         </div>
       </div>
     </section>
 
     <section id="finance">
       <div class="shell split">
-        <div class="panel glass reveal">
-          <span class="eyebrow"><span class="dot"></span> Why the finance background matters</span>
+        <div class="panel reveal">
+          <span class="eyebrow"><span class="dot"></span> Finance-aware development</span>
           <h2>Not only code. Business logic too.</h2>
-          <p style="margin-top:22px">Many projects fail because the developer understands the technology but not the financial or operational logic. My strength is connecting both sides: reliable software and business numbers that actually match reality.</p>
+          <p style="margin-top:22px">Many projects fail because the developer understands the technology but not the financial or operational logic. USSOFTWARE connects both sides: reliable software and business numbers that match reality.</p>
           <div class="list">
             <div class="list-item"><div class="check">✓</div><div><h3>Finance-first architecture</h3><p>Models, reports, and systems designed around cash flow, profitability, controls, and decision-making.</p></div></div>
             <div class="list-item"><div class="check">✓</div><div><h3>Accounting-aware automation</h3><p>Workflows that respect reconciliations, audit trails, categories, tax logic, and management reporting.</p></div></div>
             <div class="list-item"><div class="check">✓</div><div><h3>Clear client communication</h3><p>Technical explanations translated into practical business language for owners, accountants, and managers.</p></div></div>
           </div>
         </div>
-        <div class="panel glass reveal">
+
+        <div class="panel reveal">
           <h2>Core capability areas.</h2>
           <div class="feature-grid">
             <div class="feature-tile"><h3>Financial Modeling</h3><p>Forecasts, P&L, balance sheet, cash flow, debt schedules, valuation, pricing, sensitivity analysis.</p></div>
@@ -593,8 +324,8 @@
     <section id="work">
       <div class="shell">
         <div class="section-head reveal">
-          <h2>Project types I can deliver.</h2>
-          <p>From small fixes to full systems, I keep the build practical: clear milestones, testable outputs, documentation, and a working demo whenever possible.</p>
+          <h2>Project types USSOFTWARE can deliver.</h2>
+          <p>From small fixes to full systems: clear milestones, testable outputs, documentation, and a working demo whenever possible.</p>
         </div>
         <div class="timeline">
           <div class="step reveal"><span class="num">01</span><h3>Excel/VBA systems</h3><p>Macros, label printing, finance tools, production trackers, dashboards, and robust workbook automation.</p></div>
@@ -605,44 +336,24 @@
       </div>
     </section>
 
-    <section id="languages">
-      <div class="shell">
-        <div class="section-head reveal">
-          <h2>Trilingual communication.</h2>
-          <p>I can work with clients and documents in English, French, and Arabic, which is useful for international projects, bilingual deliverables, and cross-border teams.</p>
-        </div>
-        <div class="language-panel">
-          <div class="lang reveal"><span class="label">English</span><h3>Clear technical and business delivery.</h3><p>I can write proposals, specifications, reports, documentation, and client-facing messages in professional English.</p></div>
-          <div class="lang reveal"><span class="label">Français</span><h3>Communication professionnelle en français.</h3><p>Je peux préparer des messages clients, documents, cahiers des charges, modèles financiers et rapports en français.</p></div>
-          <div class="lang ar reveal"><span class="label">العربية</span><h3>تواصل مهني باللغة العربية.</h3><p>أستطيع التعامل مع العملاء والوثائق والتقارير باللغة العربية عند الحاجة، مع شرح واضح وعملي.</p></div>
-        </div>
-      </div>
-    </section>
-
     <section id="contact">
       <div class="shell">
-        <div class="contact-box glass reveal">
+        <div class="contact-box reveal">
           <div>
             <span class="eyebrow"><span class="dot"></span> Ready when you are</span>
             <h2>Let’s build something useful.</h2>
-            <p style="margin-top:20px">Send me the business problem, sample files, or the workflow you want to improve. I can review it, propose realistic milestones, and provide a practical demo when the scope allows it.</p>
+            <p style="margin-top:20px">Send the business problem, sample files, or workflow you want to improve. I can review it, propose realistic milestones, and provide a practical demo when the scope allows it.</p>
             <div class="cta-row">
-              <a class="btn primary" href="mailto:jihadsaliba39@gmail.com?subject=New%20Project%20Inquiry&body=Hello%20Jihad,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20project%20about:%0D%0A">Email me</a>
+              <a class="btn secondary" href="mailto:jihadsaliba39@gmail.com?subject=New%20Project%20Inquiry%20-%20USSOFTWARE&body=Hello%20Jihad,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20project%20about:%0D%0A">Email me</a>
               <a class="btn secondary" href="https://www.freelancer.com/hireme/saliba04" target="_blank" rel="noopener">Hire on Freelancer</a>
             </div>
           </div>
           <div class="contact-card">
             <div class="contact-row"><span>Email</span><a href="mailto:jihadsaliba39@gmail.com">jihadsaliba39@gmail.com</a></div>
-            <div class="contact-row">
-              <span>WhatsApp</span>
-              <a href="https://wa.me/9613613731?text=Hello%20Jihad,%20I%20visited%20your%20SalibaSoft%20website%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">
-                +961 3 613 731
-              </a>
-            </div>
+            <div class="contact-row"><span>WhatsApp</span><a href="https://wa.me/9613613731?text=Hello%20Jihad,%20I%20visited%20your%20USSOFTWARE%20website%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">+961 3 613 731</a></div>
             <div class="contact-row"><span>Freelancer</span><a href="https://www.freelancer.com/u/saliba04" target="_blank" rel="noopener">freelancer.com/u/saliba04</a></div>
-            <div class="contact-row"><span>Company</span><a href="#top">SalibaSoft</a></div>
-            <div class="contact-row"><span>Expertise</span><a href="#services">Development, finance, QBO</a></div>
-            <div class="contact-row"><span>Languages</span><a href="#languages">English • French • Arabic</a></div>
+            <div class="contact-row"><span>Company</span><a href="#top">USSOFTWARE</a></div>
+            <div class="contact-row"><span>Focus</span><a href="#services">Development, finance, QBO</a></div>
           </div>
         </div>
       </div>
@@ -651,10 +362,14 @@
 
   <footer>
     <div class="shell footer-inner">
-      <span>© <span id="year"></span> SalibaSoft - Jihad Saliba. Professional development and financial systems consulting.</span>
-      <span>View my verified client work and reviews on <a href="https://www.freelancer.com/u/saliba04" target="_blank" rel="noopener">Freelancer</a>.</span>
+      <span>© <span id="year"></span> USSOFTWARE - Jihad Saliba. Smart Software. Real Results.</span>
+      <span>US-inspired clarity with worldwide delivery.</span>
     </div>
   </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/9613613731?text=Hello%20Jihad,%20I%20visited%20your%20USSOFTWARE%20website%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.01 3.2A12.76 12.76 0 0 0 5.18 22.7L3.6 28.8l6.25-1.52A12.75 12.75 0 1 0 16.01 3.2Zm0 23.18c-2.05 0-4.06-.6-5.78-1.75l-.41-.27-3.7.9.94-3.6-.29-.43a10.35 10.35 0 1 1 9.24 5.15Zm5.74-7.78c-.31-.16-1.86-.92-2.15-1.03-.29-.1-.5-.16-.71.16-.21.31-.81 1.03-1 1.24-.18.21-.37.24-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.56-1.85-1.74-2.16-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54h-.6c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.23 3.4 5.4 4.77.75.32 1.34.52 1.8.66.76.24 1.45.21 2 .13.61-.09 1.86-.76 2.13-1.5.26-.73.26-1.36.18-1.5-.08-.13-.29-.21-.6-.37Z"/></svg>
+  </a>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -676,9 +391,9 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "SalibaSoft",
+    "name": "USSOFTWARE",
     "founder": "Jihad Saliba",
-    "description": "Professional developer, financial modeler, accounting automation consultant, and QuickBooks Online ProAdvisor.",
+    "description": "Custom software development, financial modeling, accounting automation, dashboards, and QuickBooks Online ProAdvisor services.",
     "email": "jihadsaliba39@gmail.com",
     "url": "https://www.freelancer.com/hireme/saliba04",
     "areaServed": "Worldwide",
@@ -686,13 +401,9 @@
     "serviceType": ["Software Development", "Financial Modeling", "QuickBooks Online Consulting", "Business Automation", "Dashboard Development"]
   }
   </script>
+
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "175af1d7c566448f83ae9717b216f542"}'></script>
   <!-- End Cloudflare Web Analytics -->
-  <a class="whatsapp-float" href="https://wa.me/9613613731?text=Hello%20Jihad,%20I%20visited%20your%20SalibaSoft%20website%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" aria-hidden="true">
-      <path d="M16.01 3.2A12.76 12.76 0 0 0 5.18 22.7L3.6 28.8l6.25-1.52A12.75 12.75 0 1 0 16.01 3.2Zm0 23.18c-2.05 0-4.06-.6-5.78-1.75l-.41-.27-3.7.9.94-3.6-.29-.43a10.35 10.35 0 1 1 9.24 5.15Zm5.74-7.78c-.31-.16-1.86-.92-2.15-1.03-.29-.1-.5-.16-.71.16-.21.31-.81 1.03-1 1.24-.18.21-.37.24-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.56-1.85-1.74-2.16-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54h-.6c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.23 3.4 5.4 4.77.75.32 1.34.52 1.8.66.76.24 1.45.21 2 .13.61-.09 1.86-.76 2.13-1.5.26-.73.26-1.36.18-1.5-.08-.13-.29-.21-.6-.37Z"/>
-    </svg>
-  </a>
 </body>
 </html>
