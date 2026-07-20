@@ -1,0 +1,18 @@
+USSOFTWARE COMPLETE GITHUB REPLACEMENT
+
+1. Extract this ZIP.
+2. Open github.com/ussoftware1/ussoftware1.github.io
+3. Select Add file > Upload files.
+4. Drag ALL extracted contents into the repository root.
+5. Commit directly to main.
+
+Upload the CONTENTS, not the outer folder.
+The package includes CNAME, so ussoftware.online remains connected.
+It also includes a replacement ussoftware.html redirect to prevent the old page from remaining indexed.
+
+After GitHub Pages deploys, check:
+https://ussoftware.online/
+https://ussoftware.online/excel-automation/
+https://ussoftware.online/quickbooks-online/
+https://ussoftware.online/work/
+https://ussoftware.online/sitemap.xml
