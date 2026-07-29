@@ -5,3 +5,53 @@
 .page-hero h1.compact-title{font-size:clamp(2.6rem,4.8vw,4.45rem)}
 @media(max-width:1100px){.topbar nav a{padding:8px 7px;font-size:.8rem}.flag-pill{display:none}.hero-grid,.page-hero-grid,.contact-box,.content-grid,.assessment-wrap{grid-template-columns:1fr}.assessment-copy{position:static}.side-card{position:static}.cards,.portfolio-grid{grid-template-columns:repeat(2,1fr)}.solution-links{grid-template-columns:1fr}.process-grid{grid-template-columns:repeat(2,1fr)}.wide-project{grid-template-columns:1fr}.wide-project .project-image{min-height:0;aspect-ratio:16/10}}
 @media(max-width:760px){html{scroll-padding-top:78px}.shell{width:min(calc(100% - 24px),var(--max))}.topbar{padding:8px 12px}.brand-mark{width:44px;height:44px}.brand em{font-size:.68rem}.menu-btn{display:block}.topbar nav{display:none;position:absolute;top:65px;left:10px;right:10px;padding:12px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.topbar nav.open{display:flex}.topbar nav a{text-align:center;padding:11px}.hero{padding-top:54px}.hero-grid{gap:24px}.proof-grid,.cards,.portfolio-grid,.feature-grid,.process-grid,.use-case-grid,.split,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.section-head{display:block}.section-head p{margin-top:13px}section{padding:54px 0}.page-hero{padding-top:48px}.hero-surface,.content-block,.panel{padding:23px}.assessment-wrap{padding:23px}.assessment-form{padding:19px}.btn{width:100%}.cta-row{display:grid}.contact-row{flex-direction:column}.contact-row strong{text-align:left}.footer-inner{display:block}.footer-links{margin-top:14px}.whatsapp-float{width:56px;height:56px;right:12px;bottom:12px}.whatsapp-float img{width:38px;height:38px}.wide-project{padding:17px}.wide-project .project-image{aspect-ratio:16/11}}
+
+/* V4.1 image integrity: display every screenshot in full. */
+.hero-visual,
+.page-visual {
+  aspect-ratio: 16 / 10;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-visual img,
+.page-visual img,
+.image-frame img,
+.service-image img,
+.wide-project img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.hero-visual img,
+.page-visual img {
+  height: 100%;
+  max-height: 100%;
+}
+.image-frame,
+.service-image,
+.wide-project .project-image {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
+  align-self: center;
+}
+/* These screenshots already appear in the same page's hero. */
+.service-image:has(img[src="/assets/qbo-dashboard-official.png"]),
+.service-image:has(img[src="/assets/work-automation.webp"]),
+.service-image:has(img[src="/assets/work-dcf.webp"]),
+.service-image:has(img[src="/assets/work-excel.webp"]),
+.service-image:has(img[src="/assets/work-platform.webp"]) {
+  display: none;
+}
+/* The horse-racing image already appears in the Work project list. */
+.page-hero-grid:has(.page-visual img[src="/assets/work-betassist.webp"]) {
+  grid-template-columns: 1fr;
+}
+.page-visual:has(img[src="/assets/work-betassist.webp"]) {
+  display: none;
+}
