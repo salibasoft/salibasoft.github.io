@@ -1,9 +1,12 @@
-UPLOAD TO GITHUB
+UPLOAD THE ENHANCED WEBSITE TO GITHUB
 
 1. Extract this ZIP.
 2. Open the ussoftware1/ussoftware1.github.io repository.
 3. Choose Add file > Upload files.
 4. Upload ALL extracted contents directly to the repository root.
 5. Commit the changes.
+6. Wait for GitHub Pages deployment to complete.
+7. Open https://ussoftware.online/ and test the assessment form and WhatsApp button.
 
-Upload the contents, not the outer folder. Replace existing files when prompted.
+Upload the extracted contents, not the ZIP or an outer folder. Replace existing
+files when prompted. Keep CNAME and .nojekyll in the repository root.

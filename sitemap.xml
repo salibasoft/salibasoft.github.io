@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://ussoftware.online/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-<url><loc>https://ussoftware.online/custom-software/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://ussoftware.online/excel-automation/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://ussoftware.online/quickbooks-online/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://ussoftware.online/financial-modeling/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://ussoftware.online/api-automation/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://ussoftware.online/work/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ussoftware.online/</loc><lastmod>2026-07-29</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://ussoftware.online/custom-software/</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ussoftware.online/excel-automation/</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ussoftware.online/quickbooks-online/</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ussoftware.online/financial-modeling/</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ussoftware.online/api-automation/</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ussoftware.online/work/</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ussoftware.online/warehouse-inventory-api-integration/</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ussoftware.online/accounting-software-api-integration/</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ussoftware.online/quickbooks-ar-aging-excel-dashboard/</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>
