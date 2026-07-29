@@ -7,6 +7,7 @@ UPLOAD THE ENHANCED WEBSITE TO GITHUB
 5. Commit the changes.
 6. Wait for GitHub Pages deployment to complete.
 7. Open https://ussoftware.online/ and test the assessment form and WhatsApp button.
+8. Open Solutions in the top menu and verify the three focused solution pages.
 
 Upload the extracted contents, not the ZIP or an outer folder. Replace existing
 files when prompted. Keep CNAME and .nojekyll in the repository root.

@@ -9,3 +9,6 @@ Static GitHub Pages website for https://ussoftware.online/.
 - Added focused accounting software API integration content.
 - Added a QuickBooks AR aging and Excel dashboard case study.
 - Strengthened internal links, calls to action, page metadata, and sitemap coverage.
+- Added a visible Solutions navigation link to reach the three focused pages.
+- Removed repeated showcase screenshots from every service page.
+- Updated image sizing so all remaining visuals display completely without cropping.
