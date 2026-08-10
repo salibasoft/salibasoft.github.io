@@ -1,0 +1,16 @@
+USSOFTWARE CLIENT RETRIEVAL V4.4 - RANKING ENHANCEMENTS
+
+Changes in this release:
+- Added sitewide footer links to Accounting API and Warehouse API pages so both priority pages receive consistent internal links.
+- Added contextual internal links from QuickBooks, Excel, Finance, Custom Software, Work, and the AR case study.
+- Strengthened Accounting Software Integration page title, H1, description, integration-control content, and FAQ content around the real Search Console query themes.
+- Strengthened Warehouse Software API / Inventory Integration page title, H1, description, integration-control content, and FAQ content around the real Search Console query themes.
+- Updated schema wording and sitemap last-modified dates for the release.
+- No new images were added and existing images were not duplicated or cropped by this patch.
+
+After upload:
+1. Confirm the homepage and both priority pages load correctly on desktop and phone.
+2. Submit sitemap.xml in Google Search Console if it is not already submitted.
+3. Use URL Inspection to request indexing for the two priority integration pages after deployment.
+4. Do not repeatedly search your own target keywords to test ranking; use Search Console Performance instead.
+5. External backlinks cannot be created by this ZIP. Add the website link to legitimate professional profiles and seek genuine third-party references separately.
